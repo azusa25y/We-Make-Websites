@@ -141,7 +141,7 @@ h2{
 
 
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 600px) {
 h2{
 	height: 33px;	
 	width: 212px;	
@@ -219,7 +219,7 @@ h2{
 }
 .flickity-viewport{
 	margin: 0px, 0px, 0px, 0px;
-	width: 284px;
+	width: 100%;
 }
 
 .flickity-button{
@@ -233,8 +233,8 @@ h2{
 	height: 600px;	
 	width: 284px;
 	margin-bottom: 37px; 
-	margin-left: 22px;
-	margin-right: 22px;
+	margin-left: 42px;
+	margin-right: 42px;
 }
 
 .flickity-page-dots{
