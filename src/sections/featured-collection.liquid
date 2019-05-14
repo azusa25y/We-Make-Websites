@@ -11,30 +11,47 @@
 
   <h2>{{ collection.title | escape }}</h2>
 
-  <p>{{ collection.description }}</p>
+  <p class="collection-description">{{ collection.description }}</p>
+
+<!-- Flickity -->
+  <div class="carousel" data-flickity='{ "groupCells": true }'>
 
   {% for product in collection.products limit: 6 %}
     {% assign current_variant = product.selected_or_first_available_variant %}
-  
-    <a href="{{ product.url | within: collection }}">
-      <div>
+
+    <a class="product-image carousel-cell" href="{{ product.url | within: collection }}">
+      <div class="product-image-wrapper">
         {% if product.featured_image != blank %}
           {{ product.featured_image | img_url: 'large' | img_tag }}
         {% endif %}
-        
-        <span js-ajax-cart="addToCart" data-variant-id="{{ current_variant.id }}" data-quantity="1">Add to cart</span>
+
+        <span class="add-to-cart" js-ajax-cart="addToCart" data-variant-id="{{ current_variant.id }}" data-quantity="1">Add to cart</span>
       </div>
 
-      <div>
+      <div class="product-title">
         <p>{{ product.title | escape }}</p>
 
-        <span>
+        <span class="product-price">
           {% include 'product-price' %}
         </span>
       </div>
+
     </a>
+
+
   {% endfor %}
-</section>
+  <script type="text/javascript">
+    $('#button').click(function() {
+        CartJS.addItem(12345678);
+    });
+</script>
+  
+
+</div>
+<div class="view-button">
+<span class="view-collection">View collection</span>
+</div>
+</section>  
 
 {% schema %}
   {

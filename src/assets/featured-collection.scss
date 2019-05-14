@@ -1,0 +1,247 @@
+/**
+ * Sections: Featured collection
+ * -----------------------------------------------------------------------------
+ * Base styling for the featured collection product grid.
+ *
+ */
+.in-page-link{
+   display:none;
+ }
+ .site-header{
+   display:none;
+ }
+.featured-collection {
+   text-align: center;
+   text-decoration: none;
+}
+.featured-collection h2{
+	text-align: center;
+}
+h2{
+    height: 48px; 
+    width: 303px; 
+    color: #003366; 
+    font-family: "Helvetica Neue";  
+    font-size: 40px;  
+    font-weight: bold;  
+    line-height: 49px;  
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 59px;
+}
+.collection-description{
+	height: 79px;	
+	width: 611px;	
+	color: #9B9B9B;	
+	font-family: "Helvetica Neue";	
+	font-size: 18px;	
+	font-weight: 300;	
+	line-height: 26px;	
+	text-align: center;
+	margin-left:auto;
+    margin-right:auto;
+    margin-bottom:41px;
+}
+.flickity-slider img{
+	height: 480px;	
+	width: 306px;
+}
+.product-image{
+	width: 320px;
+	height: 619px;
+	margin-right: 22px;
+    text-decoration: none;	
+}
+.carousel-cell{
+  width: 23%;
+  counter-increment: carousel-cell;
+}
+.product-image-wrapper{
+	position: relative;	
+}
+.carousel{
+	height: 619px;	
+	width: 1390px;
+}
+.product-title{
+	height: 25px;		
+	color: #003366;	
+	font-family: "Helvetica Neue";	
+	font-size: 21px;	
+	font-weight: bold;	
+	line-height: 26px;	
+	text-align: left;
+	text-decoration: none;
+	padding-top: 16px;
+	padding-bottom:0px;
+	margin-bottom:0px;
+}
+
+.is-selected{
+	text-decoration: none;	
+}
+.add-to-cart{
+	background-color: #FFFFFF;
+	color: #003366;	
+	font-family: "Helvetica Neue";	
+	font-size: 18px;	
+	font-weight: bold;	
+	line-height: 23px;	
+	text-align: center;
+	position:relative;
+	display: none;
+	position: absolute;
+	top: 415px;
+    left: 18px;
+    right:18px;
+    padding: 11px 87px 14px 87px;
+
+}
+.product-image:hover .add-to-cart{
+	display:block;
+}
+.product-price{
+	height: 26px;	
+	width: 66px;	
+	color: #9B9B9B;	
+	font-family: "Helvetica Neue";	
+	font-size: 18px;	
+	font-weight: 300;	
+	line-height: 26px;
+	text-align: left;
+    margin-top: 6px;
+}
+.view-collection{
+	height: 55px;	
+	width: 175px;	
+	background-color: #003366;
+	font-family: "Helvetica Neue";	
+	font-size: 18px;	
+	font-weight: bold;	
+	line-height: 23px;	
+	text-align: center;
+	color: #FFFFFF;
+	padding: 14.75px 13.55px 17.75px 14.55px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.view-button{
+	margin-top:88px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom:45px;
+	height: 55px;	
+	width: 175px;
+}
+.flickity-viewport{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+
+
+@media only screen and (max-width: 670px) {
+h2{
+	height: 33px;	
+	width: 212px;	
+	color: #003366;	
+	font-family: "Helvetica Neue";	
+	font-size: 28px;	
+	font-weight: bold;	
+	line-height: 34px;	
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.collection-description{
+	height: 95px;	
+	width: 284px;	
+	color: #9B9B9B;	
+	font-family: "Helvetica Neue";	
+	font-size: 14px;	
+	font-weight: 300;	
+	line-height: 21px;	
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 28px;
+}
+.flickity-slider img{
+	height: 446px;	
+	width: 284px;
+
+}
+.product-title{
+	height: 44px;	
+	width: 230px;	
+	color: #003366;	
+	font-family: "Helvetica Neue";	
+	font-size: 18px;	
+	font-weight: bold;	
+	line-height: 23px;
+}
+.product-price{
+	height: 18px;	
+	width: 56px;	
+	color: #9B9B9B;	
+	font-family: "Helvetica Neue";	
+	font-size: 18px;	
+	font-weight: 300;	
+	line-height: 18px;
+}
+.view-button{
+	bottom: -79px;
+}
+.view-collection{	
+	color: #FFFFFF;	
+	font-family: "Helvetica Neue";	
+	font-size: 14px;	
+	font-weight: bold;	
+	line-height: 17px;
+	height: 35px;	
+	width: 125px;	
+	background-color: #003366;
+
+}
+.carousel-cell{
+  width: 100%;
+  counter-increment: carousel-cell;
+
+}
+.carousel{
+  height: 544px;	
+  width: 100%;
+
+}
+.product-image:hover .add-to-cart{
+	display:none;
+}
+.flickity-viewport{
+	margin: 0px, 0px, 0px, 0px;
+	width: 284px;
+}
+
+.flickity-button{
+	display: none;
+}
+.product-image-wrapper{
+	height: 446px;	
+	width: 284px;
+}
+.product-image{
+	height: 600px;	
+	width: 284px;
+	margin-bottom: 37px; 
+	margin-left: 22px;
+	margin-right: 22px;
+}
+
+.flickity-page-dots{
+	height: 7px;
+	width: 100%;
+	text-align: center;
+    bottom:-50px;
+}
+
+}

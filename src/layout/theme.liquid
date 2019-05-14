@@ -8,6 +8,29 @@
   <meta name="theme-color" content="{{ settings.color_accent }}">
   <link rel="canonical" href="{{ canonical_url }}">
 
+  <!-- Flickity -->
+  {{ '//unpkg.com/flickity@2/dist/flickity.min.css' | stylesheet_tag }}
+
+  {{ '//unpkg.com/flickity@2/dist/flickity.pkgd.min.js' | script_tag }} 
+
+<!-- Azusa's SCSS -->  
+  {{ 'featured-collection.scss' | asset_url | stylesheet_tag }}
+  
+<!-- Quick Add Cart -->
+  {{ '//cdnjs.cloudflare.com/ajax/libs/shopify-cartjs/0.4.1/cart.min.js' | script_tag }}   
+  {{ '//cdnjs.cloudflare.com/ajax/libs/shopify-cartjs/0.4.1/rivets-cart.min.js' | script_tag }}   
+  {{ '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' | script_tag }}
+
+<!-- Include Cart.js -->
+        {{ 'cart.min.js' | asset_url | script_tag }}
+
+<!-- Initialise Cart.js once the page has loaded -->
+        <script type="text/javascript">
+            jQuery(function() {
+                CartJS.init({{ cart | json }});
+            });
+        </script>
+
   {%- if settings.favicon != blank -%}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
   {%- endif -%}
